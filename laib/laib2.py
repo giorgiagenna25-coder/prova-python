@@ -39,6 +39,8 @@ parola = input("Inseire parola: ")
 
 for indice in range (len(parola) - 1 , -1 , -1):
     print(parola[indice])
+oppure
+print(parola[::-1])
 
 for indice in range (len(parola) - 1 , -1 , -1):
     carattere = parola[indice]
