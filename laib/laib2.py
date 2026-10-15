@@ -66,3 +66,16 @@ while tentativi < 3:
 """
 
 # ESERCIZIO 4
+"""
+parola = input("Inserire una parola: ")
+# scivi tutte le sottostringhe della parola, prima slice 1 carattere, poi slide di 2 caratteri, poi
+# slice di 3, fino a slice len(parola)
+lun = len(parola)
+sottostringa = ""
+n = 0
+while n <= lun:
+    for i in range(lun - n +1):
+        sottostringa += parola[i : i+n] +"\n"
+    n += 1
+print(sottostringa)
+"""
