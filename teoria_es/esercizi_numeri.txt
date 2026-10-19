@@ -22,6 +22,45 @@ cosa succede su 8 bit?
 +5 + -4 + -128 = -127 è rappresentabile
 (+5 + -4) + -128 = -127
 
-ma se facciamo (-4 + -128) + +5 = -132 + 5, otteniamo un ovreflow perché
+ma se facciamo (-4 + -128) + +5 = -132 + 5, otteniamo un overflow perché
     -4 -128 --> (-)+(-)=(+) su 8 bit
 
+
+ES 127
+Due nueri in binario puto, somma e controlla overflow
+' ' ' ' ' ' '
+  1 0 1 1 0 1 1 0 +
+  0 1 0 0 1 0 1 1 =
+  ---------------
+  0 0 0 0 0 0 0 1
+overflow perché c'è riporto sul bit 9
+
+
+ES 126
+Sono dati i seguenti numeri in complemento 2 su 8 bit, rappresentati in forma esadecimale
+compatta, elenca tutti. i numeri pari e tutti i negativi
+68 = 0110 1000
+8B = 1000 1011
+81
+C4
+B2
+7E
+16
+08
+
+per verifcare se un numero è pari bisogna guardare l'ultimo bit:
+se è 0 è pari, se è 1 è dispari
+Pari = 68, C4, B2, 7E, 16, 08
+
+Per verificare se un numero è negativo devi guardare il primo bit
+Negativi = 8B. 81, C4, B2
+
+ES 125
+(a) 121 da base 3 a base 10
+    1x3^2 + 2x3^1 + 1x3^0 = 9 + 6 + 1 = 16
+
+(b) 140 da base 4 a base 8
+    140 non è un numero in base 4
+
+
+ES 12
