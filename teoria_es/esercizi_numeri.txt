@@ -1,0 +1,27 @@
+ESERCIZI
+
+ES 130
+
+ES 129
+
+ES 128
+Tre numeri su 6 bit a+b+c e verificre se si verifica overflow
+
+101100 +
+001100 =
+------
+111000     no overflow (-)+(-)=(-)
+
+111000 +
+100000 =
+------
+011000     overflow (-)+(-)=(+)
+
+
+cosa succede su 8 bit?
++5 + -4 + -128 = -127 è rappresentabile
+(+5 + -4) + -128 = -127
+
+ma se facciamo (-4 + -128) + +5 = -132 + 5, otteniamo un ovreflow perché
+    -4 -128 --> (-)+(-)=(+) su 8 bit
+
