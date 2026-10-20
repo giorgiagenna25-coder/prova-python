@@ -1,8 +1,51 @@
 ESERCIZI
 
 ES 130
+Dati due numeri in complemento a due su 8 bit 11110110 e 11001011 calcolarne la somma 
+e segnalare un eventuale overflow
+
+' ' ' ' ' '         (riporti)
+1 1 1 1 0 1 1 0 +
+1 1 0 0 1 0 1 1
+---------------
+1 1 0 0 0 0 0 1
+
+con un riporto che andrebbe sommato al nono bit, che non esiste
+
+ 1    1    1    1    0    1    1    0
+-2^7 2^6  2^5  2^4  2^3  2^2  2^1  2^0
+metto il -2^7 perchè il testo mi dice due numeri con COMPLEMENTO a due
+
+c'è overflow?
+No, perchè (-)+(-)= (-)
+
+30 => 2^4 + 2^3 + 2^2 + 2^1 => 011110
+-30 => rapresenta + 30 e poi inverti il segno
+   +30 = 0 1 1 1 1 0
+         1 0 0 0 0 1
+        +          1
+        =1 0 0 0 1 0 => -30
+
 
 ES 129
+effettuare la somma dei seguenti numeri espressi in complemento a due su 8 bit 
+riportare il risultato della somma oppure se viene generato overflow
+motivare perchè si verifica
+' ' '   ' ' '
+1 1 0 1 0 0 1 1 +
+1 0 1 1 0 1 0 1 =
+-----------------
+1 0 0 0 1 0 0 0
+
+no overflow perchè (-) + (-) = (-)
+
+1 0 0 1 0 0 1 1 +
+1 0 1 1 0 1 0 1 =
+-----------------
+0 1 0 0 1 0 0 0
+
+OVERFLOW (-) + (-) = (+) impossibile
+
 
 ES 128
 Tre numeri su 6 bit a+b+c e verificre se si verifica overflow
@@ -55,6 +98,7 @@ Pari = 68, C4, B2, 7E, 16, 08
 Per verificare se un numero è negativo devi guardare il primo bit
 Negativi = 8B. 81, C4, B2
 
+
 ES 125
 (a) 121 da base 3 a base 10
     1x3^2 + 2x3^1 + 1x3^0 = 9 + 6 + 1 = 16
@@ -70,6 +114,7 @@ ES 122
 In binario puro, 8D > 4E
 
 In complemento a 2, 8D è negativo, quindi 4E > 8D
+
 
 ES 121
 n1 = F1A2
