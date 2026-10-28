@@ -20,3 +20,8 @@ tabella_medaglie = [
 print(lista_medaglie[0] [0])
 
 print(tabella_medaglie[0] [0])
+
+#creazione incrementale tabelle
+NUMERO_RIGHE = 5
+NUMERO_COLONNE = 5
+tabella_zeri = 0
