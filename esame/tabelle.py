@@ -24,4 +24,37 @@ print(tabella_medaglie[0] [0])
 #creazione incrementale tabelle
 NUMERO_RIGHE = 5
 NUMERO_COLONNE = 5
-tabella_zeri = 0
+tabella_zeri = []
+
+for riga in range(NUMERO_RIGHE):
+    tabella_zeri.append([0]*NUMERO_COLONNE)
+
+print(tabella_zeri)
+
+tabella_zeri[2] [2] = 1
+
+for riga in tabella_medaglie:
+    print(riga)
+
+#somma per riga
+rowtotal = 0
+i = 2  #tieni ferma la riga
+for j in range(len(tabella_medaglie[0])):
+    rowtotal += tabella_medaglie[2][j]
+
+# somma per colonna
+coltotal = 0
+j = 1
+for i in range(len(tabella_medaglie)):
+    coltotal += tabella_medaglie[i][1]
+
+print("rowtotal: " , rowtotal)
+print("coltotal: " , coltotal)
+
+
+lista_paesi = ["Canada" , "Italia" , "Marocco" , "Serbia" , "USA"]
+print("Prima del sorting")
+print(lista_paesi)
+
+print("Dopo il sorting")
+lista_ordinata = lista_paesi.sort()
