@@ -5,7 +5,6 @@ lista_c = []
 
 i = 0
 j = 0
-
 while i < len(lista_a) and j < len(lista_b):
     if lista_a[i] < lista_b[j]:
          lista_c.append(lista_a[i])
