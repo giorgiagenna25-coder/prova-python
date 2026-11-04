@@ -33,7 +33,7 @@ while "_" in park: #finchè ci sono posti liberi
     print("La sequenza di parcheggi liberi più lunga si trova in posizione ",i)
     print("Sequenza max in ",i,"lunga ", lun_max)
 
-    nuova_pos = pos_max + lun_max // 2
+    nuova_pos = int(pos_max + lun_max // 2)
     print("Parcheggia in posizione: ", nuova_pos)
     park[nuova_pos] = "X"
     print(park)
