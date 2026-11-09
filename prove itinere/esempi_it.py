@@ -112,7 +112,7 @@ Nello stesso luogo: giorno 3
 Nello stesso luogo: giorno 6
 """
 
-for giorno in range(len(luoghi[0])): #len(luoghi[0]) = al numero di alementi nella prima riga della 
+for giorno in range(len(luoghi[0])): #len(luoghi[0]) = al numero di elementi nella prima riga della 
                                      #tabella (7 giorni)
     #if giorno sono tutti nello stesso giorno
     #if luoghi[0][giorno* == luoghi[1][giorno] and luoghi[2][giorno] == luoghi[0][giorno] ...:
