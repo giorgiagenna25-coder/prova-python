@@ -1,0 +1,33 @@
+Formule che servono:
+Sulla memoria
+    MEM (bit/byte) = N_Celle x Dimensione_cella (bit/byte)
+    
+    Parallelismo memoria == Dimensione_cella == Dimensione DBUS == Dimensione registri == Parallelismo ALU
+
+    N_Celle <= 2 ^ (Dimensione ABUS)
+
+    MEM <= 2 ^ (ABUS) * DBUS
+
+    MEM == MEMORIA CENTRALE (RAM)
+
+Sui tempi di esecuzione
+    Tempo di esecuzione = Numero di istruzioni (macchina) x Cicli di clock per Istruzione x Periodo di Clock
+
+ESERCIZI
+
+ES 128
+Che cosa sono e qual è la funzione dei registri di una CPU? Si dettagli il ruolo del registro 
+Program Counter
+
+I registri rappresentano una piccola quantità di memoria interna alla CPU, direttamente connessi alla
+ALU e alla FPU. Sono il tipo di memorio più veloce. Servono per memorizzare i dati di lavoro del
+programma e gli operandi/risultati delle operazioni della ALU.
+
+Il program counter invece non contiene dati di lavoro, bensl contiene l'indirizzo di memoria della
+prossima istruzione che la CPU dovrà eseguire. Normalmente si incrementa da solo dopo avere letto il
+codice dell'istruzione da eseguire.
+
+
+ES 127
+Unità di controllo
+    Program counter (PC) -> contiene indirizzo della prox istruzione da eseguire
